@@ -3,29 +3,29 @@
 计算机根据人猜的数字根本给出提示大一点/小一点/猜对了"""
 import random
 
-a = random.randint(1, 100)
+computer_number = random.randint(1, 100)
 
-# print(a)
+# print(computer_number)
 while True:
-    reutle = int(input("请输入0到100的整数："))
-    if a == reutle:
+    person_number = int(input("请输入0到100的整数："))
+    if computer_number == person_number:
         print("恭喜你猜a对了！")
         print("-------------------------------------")
         choice = input("是否继续猜数y/n:")
         if choice == "y":
-            a = random.randint(1, 100)
-            # print(a)
+            computer_number = random.randint(1, 100)
+            # print(computer_number)
             continue
         else:
             print("退出游戏！")
             break
     else:
-        if a > reutle:
-            # print(a, reutle)
+        if computer_number > person_number:
+            # print(computer_number , person_number)
             print("你的数字小了一点！请在次猜数！")
             continue
         else:
-            # print(a, reutle)
+            # print(computer_number , person_number)
             print("你的数字大了一点！请在次猜数！")
             continue
 
