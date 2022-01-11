@@ -14,3 +14,8 @@ print(set_a.difference(set_b))
 set_a.add("e")
 print(set_a)
 
+# 集合的自动去重功能
+c = "hfksdhkhhhhdbjgfgaaaa"
+print(set(c))
+
+
